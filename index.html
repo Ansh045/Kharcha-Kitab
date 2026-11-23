@@ -1,0 +1,187 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kharcha Kitab Case Studies</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: one column of "sheets of paper" laid on a desk. Text stays narrow, figures run wide.
+   The figures keep their paper colour in both themes, so the desk changes and the sheets do not. */
+:root{
+  --desk:#E9ECF0; --ink:#24222A; --muted:#5C5864; --line:rgba(36,34,42,.16);
+  --accent:#C93F22; --teal:#1F7F74; --panel:#FFFFFF; --sheet-shadow:0 1px 2px rgba(0,0,0,.10),0 10px 28px rgba(30,28,40,.14);
+  --hand:'Caveat','Segoe Print','Bradley Hand',cursive; --body:'Nunito','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --desk:#1A191E; --ink:#ECE9F0; --muted:#A8A3B0; --line:rgba(255,255,255,.16);
+  --accent:#FF8A69; --teal:#59C3B5; --panel:#25232B; --sheet-shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px rgba(0,0,0,.45); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --desk:#1A191E; --ink:#ECE9F0; --muted:#A8A3B0; --line:rgba(255,255,255,.16);
+  --accent:#FF8A69; --teal:#59C3B5; --panel:#25232B; --sheet-shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px rgba(0,0,0,.45); color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--desk);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1180px;margin:0 auto}
+a{color:inherit}
+.hand{font-family:var(--hand);font-weight:700;color:var(--accent)}
+
+header.top{padding-block:48px 28px}
+.eyebrow{font-family:var(--hand);font-weight:700;font-size:1.7rem;color:var(--accent);line-height:1}
+h1{font-family:var(--hand);font-weight:700;font-size:clamp(2.8rem,8vw,5.2rem);line-height:.98;margin:6px 0 14px;text-wrap:balance}
+.lede{max-width:62ch;font-size:1.12rem;color:var(--muted)}
+nav.jump{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-weight:800}
+nav.jump a{text-decoration:none;border-bottom:3px solid var(--accent);padding-bottom:2px}
+
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:8px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:22px 24px;min-width:0}
+.panel h2{font-family:var(--hand);font-size:2rem;line-height:1.05;margin:0 0 6px;color:var(--ink)}
+.panel ul{margin:8px 0 0;padding-left:1.1rem}
+.panel li{margin:5px 0}
+.panel.real h2{color:var(--teal)}
+.panel.assumed h2{color:var(--accent)}
+
+section.project{margin-top:72px}
+section.project>.head{max-width:70ch}
+h2.proj{font-family:var(--hand);font-size:clamp(2.2rem,6vw,3.4rem);line-height:1;margin:0 0 8px;text-wrap:balance}
+.tagline{color:var(--muted);margin:0 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.chips li{border:1.5px solid var(--ink);border-radius:999px;padding:1px 12px;font-weight:800;font-size:.85rem}
+
+figure.fig{margin:44px 0 0}
+figure.fig .cap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:6px 28px;margin-bottom:14px;align-items:baseline}
+.cap .n{font-family:var(--hand);font-weight:700;font-size:1.6rem;color:var(--accent);line-height:1.1}
+.cap p{margin:0;color:var(--muted)}
+.cap p b{color:var(--ink)}
+figure.fig a.sheet{display:block;box-shadow:var(--sheet-shadow);border-radius:3px;overflow:hidden;background:#FAF6EC}
+figure.fig img{display:block;width:100%;height:auto}
+.zoom{font-size:.82rem;color:var(--muted);margin-top:8px}
+
+.decisions{margin-top:72px}
+.decisions h2{font-family:var(--hand);font-size:clamp(2.2rem,6vw,3.4rem);line-height:1;margin:0 0 16px}
+.dgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.dgrid .panel h3{font-family:var(--hand);font-size:1.7rem;line-height:1.05;margin:0 0 6px}
+.dgrid .panel p{margin:0}
+footer{margin-top:56px;padding-top:16px;border-top:2px dashed var(--line);color:var(--muted);font-size:.9rem}
+
+@media (max-width:760px){
+  .two,.dgrid{grid-template-columns:minmax(0,1fr)}
+  figure.fig .cap{grid-template-columns:minmax(0,1fr)}
+  body{font-size:16px}
+}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">product management portfolio</div>
+  <h1>Kharcha Kitab: two connected case studies</h1>
+  <p class="lede">An app concept that tells first-job earners in India how much they can safely spend today. Project 1 decides what to build and in what order. Project 2 looks at the first eight weeks of simulated data and designs the next experiment.</p>
+  <nav class="jump" aria-label="Jump to a project"><a href="#project-1">Project 1: Discovery and roadmap</a><a href="#project-2">Project 2: Product analytics</a></nav>
+</header>
+
+<div class="two" aria-label="What is real and what is assumed">
+  <div class="panel real">
+    <h2>What is real</h2>
+    <ul>
+      <li>The method: problem framing, RICE and MoSCoW scoring, user stories, funnel and cohort analysis, sample-size maths</li>
+      <li>Every calculation, which can be re-run from the workbook and the SQL file</li>
+      <li>Public facts, each with a source: UPI volume and the features of competing apps</li>
+    </ul>
+  </div>
+  <div class="panel assumed">
+    <h2>What is assumed or simulated</h2>
+    <ul>
+      <li>The persona. It is a proto-persona from secondary research, and none of my three riskiest assumptions is validated yet</li>
+      <li>RICE inputs, targets and channel costs, which are my own estimates</li>
+      <li>All 6,510 users in Project 2. Their patterns were designed for practice, so they show the method and not real-world results</li>
+    </ul>
+  </div>
+</div>
+
+<section class="project" id="project-1" aria-labelledby="p1h">
+  <div class="head">
+    <div class="eyebrow">project 1</div>
+    <h2 class="proj" id="p1h">Product discovery and roadmap</h2>
+    <p class="tagline">Question: why do first salaries vanish before month-end, and what is the smallest product that would fix it?</p>
+    <ul class="chips"><li>Problem framing</li><li>Proto-persona</li><li>Journey map</li><li>Competitive analysis</li><li>RICE</li><li>MoSCoW</li><li>User stories</li><li>Roadmap and KPIs</li></ul>
+  </div>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">1 · Problem and person</div><p><b>What to notice:</b> the persona is labelled as a proto-persona, and the three riskiest assumptions each come with a cheap way to test them before any code is written.</p></div>
+    <a class="sheet" href="web/01_problem_and_persona.webp" target="_blank" rel="noopener"><img src="web/01_problem_and_persona.webp" alt="Problem statement, how-might-we question, job to be done, a proto-persona called Riya and her three riskiest assumptions" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">2 · Journey map</div><p><b>What to notice:</b> the dip in the mood line sits at mid-month, which is why the home-screen number became feature C. Each thinking line is a hypothesis to check in interviews.</p></div>
+    <a class="sheet" href="web/02_journey_map.webp" target="_blank" rel="noopener"><img src="web/02_journey_map.webp" alt="Five-stage journey map from salary day to month-end with doing, thinking, feeling, pain points and opportunities" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">3 · Competitive landscape</div><p><b>What to notice:</b> the comparison includes a notes app, because doing nothing is the real competitor. The planned product is marked as not built, and the biggest threat is named.</p></div>
+    <a class="sheet" href="web/03_competitive_landscape.webp" target="_blank" rel="noopener"><img src="web/03_competitive_landscape.webp" alt="Comparison table of a notes app, UPI app insights, Splitwise, a YNAB-style app and the planned product across seven criteria" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">4 · Prioritisation</div><p><b>What to notice:</b> auto-import ranks fifth on RICE but stays a Must, with the reason written down. The weekly summary ranks third but is only a Should. RICE ranks ideas and MoSCoW sets the build order.</p></div>
+    <a class="sheet" href="web/04_prioritisation_rice_moscow.webp" target="_blank" rel="noopener"><img src="web/04_prioritisation_rice_moscow.webp" alt="Twelve features scored with RICE and sorted into Must, Should, Could and Won't" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">5 · MVP requirements</div><p><b>What to notice:</b> three user stories with Given, When, Then criteria, one success metric and one edge case each, so engineering and QA could pick them up.</p></div>
+    <a class="sheet" href="web/05_mvp_user_stories.webp" target="_blank" rel="noopener"><img src="web/05_mvp_user_stories.webp" alt="MVP scope and three user stories with acceptance criteria" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">6 · Roadmap and metrics</div><p><b>What to notice:</b> outcomes instead of dates, one North Star, targets set before launch, and conditions that would make me change course. The pink note shows the plan changing after Project 2.</p></div>
+    <a class="sheet" href="web/06_roadmap_and_metrics.webp" target="_blank" rel="noopener"><img src="web/06_roadmap_and_metrics.webp" alt="North Star metric tree with a Now, Next, Later roadmap and stop conditions" loading="lazy"></a>
+  </figure>
+</section>
+
+<section class="project" id="project-2" aria-labelledby="p2h">
+  <div class="head">
+    <div class="eyebrow">project 2</div>
+    <h2 class="proj" id="p2h">Product analytics and experiment design</h2>
+    <p class="tagline">Question: eight weeks after the MVP launch, where do people drop off, who stays, and what should we test first?</p>
+    <ul class="chips"><li>SQL</li><li>Excel</li><li>Funnel analysis</li><li>Cohort retention</li><li>Channel quality</li><li>Feature adoption</li><li>A/B test design</li></ul>
+  </div>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">7 · Dashboard</div><p><b>What to notice:</b> two of four targets were met and two missed. Between onboarding and activation the funnel loses 2,429 people, the biggest single drop, so that is where the work goes first.</p></div>
+    <a class="sheet" href="web/07_analytics_dashboard.webp" target="_blank" rel="noopener"><img src="web/07_analytics_dashboard.webp" alt="Dashboard with five KPI cards, a funnel, weekly signups, retention by type of user and channel quality" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">8 · Funnel by platform</div><p><b>What to notice:</b> onboarding is similar on Android and iOS, but activation is 39% against 26%. The chart turns "improve onboarding" into one testable idea. It also warns that the auto-import gap overstates the feature's effect.</p></div>
+    <a class="sheet" href="web/08_funnel_android_vs_ios.webp" target="_blank" rel="noopener"><img src="web/08_funnel_android_vs_ios.webp" alt="Funnel steps for Android and iOS side by side, and activation for Android users with and without auto-import" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">9 · Retention cohorts</div><p><b>What to notice:</b> most of the loss happens in week 1, then the curve flattens at about 16 to 18 percent. The hatched cells are weeks that have not happened yet, which gives the staircase.</p></div>
+    <a class="sheet" href="web/09_retention_cohorts.webp" target="_blank" rel="noopener"><img src="web/09_retention_cohorts.webp" alt="Heat map of weekly retention for eight signup cohorts over nine weeks" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">10 · Feature adoption</div><p><b>What to notice:</b> the most-used feature shows no lift, and the weekly summary's raw gap shrinks by more than half once users are compared within the same auto-import group. No gap clears the noise band, so none is claimed as a cause.</p></div>
+    <a class="sheet" href="web/10_feature_adoption_vs_retention.webp" target="_blank" rel="noopener"><img src="web/10_feature_adoption_vs_retention.webp" alt="Adoption and week-4 retention gap for four features, raw and adjusted, with a noise band" loading="lazy"></a>
+  </figure>
+
+  <figure class="fig">
+    <div class="cap"><div class="n">11 · Experiment plan</div><p><b>What to notice:</b> one hypothesis, one primary metric, guardrails, a sample size and a decision rule written before the test. A 5-point target takes about 6.5 weeks at this traffic, and a 4-point target would take about 10, which is why 5 was chosen.</p></div>
+    <a class="sheet" href="web/11_experiment_plan.webp" target="_blank" rel="noopener"><img src="web/11_experiment_plan.webp" alt="A/B test plan for asking for UPI import during onboarding, with sample size by effect size and two further candidate tests" loading="lazy"></a>
+  </figure>
+</section>
+
+<section class="decisions" aria-labelledby="dh">
+  <h2 id="dh">Four decisions worth asking me about</h2>
+  <div class="dgrid">
+    <div class="panel"><h3>Keeping auto-import as a Must</h3><p>RICE put it fifth because it is the most expensive feature. I kept it in the MVP because the safe-to-spend number is empty without it, and added a feasibility spike and manual quick-add as a fallback.</p></div>
+    <div class="panel"><h3>Comparing like with like</h3><p>Users of the weekly summary also tend to use auto-import, and auto-import already predicts staying. Comparing inside each auto-import group cut the apparent lift from 7.4 to 2.9 points.</p></div>
+    <div class="panel"><h3>Choosing a 5-point lift</h3><p>Smaller effects need far more users. With about 476 eligible users a week, I picked the smallest lift that finishes in under seven weeks.</p></div>
+    <div class="panel"><h3>Not testing the weekly summary</h3><p>The adjusted effect is small, and detecting it would take about 16 weeks. I would ship it on by default, watch retention, and spend the test slots on bigger bets.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Concept project. Facts about UPI and competing apps come from public news and product pages (Nov 2026). User data, targets and costs are simulated or assumed and are marked wherever they appear. Tap any figure to open it full size.</p>
+</footer>
+</div>
+
+</body></html>
